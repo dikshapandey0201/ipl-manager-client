@@ -12,6 +12,7 @@ export default defineConfig({
       '/api': {
         target: 'https://ipl-manager-server.onrender.com',
         changeOrigin: true,
+        secure:true,
       }
     }
   }
