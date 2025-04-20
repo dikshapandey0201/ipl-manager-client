@@ -1,12 +1,59 @@
-# React + Vite
+# 🏏 IPL Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**IPL Manager** is a full-stack web application built with the **MERN stack** (MongoDB, Express.js, React, Node.js).  
+It allows users to view IPL teams and players, while giving **admins** the ability to manage all the data securely.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [IPL Manager](https://ipl-manager-client.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+**Frontend repo** : [Link](https://github.com/dikshapandey0201/ipl-manager-client)
 
-## Expanding the ESLint configuration
+**Backend repo** : [Link](https://github.com/dikshapandey0201/ipl-manager-server)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧭 Flow Diagram
+
+![flowchart](https://github.com/user-attachments/assets/a2f90819-0b32-4a92-91d1-4f1f33617d02)
+
+
+
+---
+
+## ✨ Features
+
+### 🔐 Authentication System
+- JWT-based secure login
+- BcryptJs-encrypted passwords
+- Google Authentication via Firebase
+- Protected routes with middleware
+- Smooth login/logout flow
+
+### 🧠 Admin Management
+- Upload team/player data in bulk (JSON format)
+- Add/update/delete teams and players
+- Real-time updates on the frontend
+
+### ⚙️ Technical Highlights
+- Tailwind CSS for rapid styling.
+- Redux + RTK Query for state and data fetching/caching.
+- Cloudinary for image hosting
+- MongoDB with Mongoose for structured storage
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend
+- React + JavaScript
+- React Router DOM
+- Redux + Redux Toolkit Query
+- Tailwind CSS + Material UI
+- React Icons
+
+### Backend
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT for authentication
+- Bcrypt.js for hashing
+- Cloudinary for image
