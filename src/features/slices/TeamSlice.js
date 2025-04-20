@@ -2,7 +2,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 export const teamApi = createApi({
     reducerPath: 'teamApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3000/api/team'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://ipl-manager-server.onrender.com/api/team'}),
     tagTypes: ['Team'],
     endpoints: (builder) => ({
         getAllTeams: builder.query({
