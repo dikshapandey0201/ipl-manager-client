@@ -11,7 +11,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://ipl-manager-server.onrender.com',
-        secure: false,
+        changeOrigin: true,
       }
     }
   }
