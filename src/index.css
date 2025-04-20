@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{  
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+
+.menu-icon:hover{
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.6)) !important;
+    transform: scale(1.1) !important;
+
+}
+
+.carousel-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .carousel .carousel-arrow {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .carousel .left-arrow {
+    left: 10px;
+  }
+  
+  .carousel .right-arrow {
+    right: 10px;
+  }
+  
+  .carousel .carousel-slider {
+    padding: 10px;
+  }
+  
