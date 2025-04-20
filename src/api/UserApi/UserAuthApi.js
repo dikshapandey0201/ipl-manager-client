@@ -7,6 +7,7 @@ export const loginUser = async (userData) => {
         "Content-Type": "application/json",
         },
         body: JSON.stringify(userData),
+         credentials: 'include',
     });
     
     if (!response.ok) {
@@ -40,6 +41,8 @@ export const currentuser = async () => {
         headers: {
         "Content-Type": "application/json",
         },
+         credentials: 'include',
+        
     });
     
     if (!response.ok) {
