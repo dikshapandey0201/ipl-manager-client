@@ -1,5 +1,7 @@
+const backendUrl = "https://ipl-manager-server.onrender.com"
+
 export const loginUser = async (userData) => {
-    const response = await fetch('/api/user/login', {
+    const response = await fetch(`${backendUrl}/api/user/login`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -16,7 +18,7 @@ export const loginUser = async (userData) => {
     }
 
 export const signupUser = async (userData) => {
-    const response = await fetch('/api/user/signup', {
+    const response = await fetch(`${backendUrl}/api/user/signup`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -33,7 +35,7 @@ export const signupUser = async (userData) => {
 }
 
 export const currentuser = async () => {
-    const response = await fetch('/api/user/currentuser', {
+    const response = await fetch(`${backendUrl}/api/user/currentuser`, {
         method: "GET",
         headers: {
         "Content-Type": "application/json",
@@ -49,7 +51,7 @@ export const currentuser = async () => {
 }
 
 export const forgotPassword = async (userData) => {
-    const response = await fetch('/api/user/forgot-password', {
+    const response = await fetch(`${backendUrl}/api/user/forgot-password`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -68,7 +70,7 @@ export const forgotPassword = async (userData) => {
 export const resetPassword = async (password,token) => {
     console.log(token)
     console.log(password)
-    const response = await fetch(`/api/user/reset-password/${token}`, {
+    const response = await fetch(`${backendUrl}/api/user/reset-password/${token}`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -85,7 +87,7 @@ export const resetPassword = async (password,token) => {
 }
 
 export const updateUser = async (userData,id) => {
-    const response = await fetch(`/api/user/updateuser/${id}`, {
+    const response = await fetch(`${backendUrl}/api/user/updateuser/${id}`, {
         method: "PUT",
         headers: {
         "Content-Type": "application/json",
@@ -102,7 +104,7 @@ export const updateUser = async (userData,id) => {
 }
 
 export const logoutUser = async () => {
-    const response = await fetch('/api/user/logout', {
+    const response = await fetch(`${backendUrl}/api/user/logout`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
@@ -118,7 +120,7 @@ export const logoutUser = async () => {
 }
 
 export const handleGoogleLogin = async (userDetails) => {
-    const response = await fetch(`/api/user/google-login`, {
+    const response = await fetch(`${backendUrl}/api/user/google-login`, {
         method: "POST",
         headers: {
         "Content-Type": "application/json",
