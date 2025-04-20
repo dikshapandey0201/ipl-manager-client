@@ -7,13 +7,13 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://ipl-manager-server.onrender.com',
-        changeOrigin: true,
-        secure:true,
-      }
-    }
-  }
+  // server: {
+  //   proxy: {
+  //     '/api': {
+  //       target: 'https://ipl-manager-server.onrender.com',
+  //       changeOrigin: true,
+  //       secure:true,
+  //     }
+  //   }
+  // }
 })
